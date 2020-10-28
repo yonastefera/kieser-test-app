@@ -1,0 +1,14 @@
+@import "../../../../../styles/mixins";
+
+.content-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+  @include mobile {
+    font-size: .8rem;
+  }
+  &:hover {
+    color: #575757;
+  }
+}

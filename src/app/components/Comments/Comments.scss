@@ -1,0 +1,45 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.comments {
+  @include flexColumn(flex-end, flex-end);
+  width: 25rem;
+  height: 7rem;
+  position: relative;
+  .fa-quote-right {
+    position: absolute;
+    top: -.8rem;
+    right: -.5rem;
+    font-size: 1.2rem;
+  }
+  &__buttons {
+    @include flexRow(space-between);
+    width: 5rem;
+    margin-top: -1.9rem;
+    .custom-button {
+      width: auto;
+      height: auto;
+      padding: 0 .5rem;
+      color: $color-charcoal;
+      font-size: 2rem;
+    }
+  }
+  &__item {
+    &-content {
+      padding: 1rem;
+      width: 25rem;
+      height: 7rem;
+      background-color: $color-green;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      margin-bottom: .5rem;
+    }
+    &-footer {
+      @include flexRow(flex-end, center);
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-left: .5rem;
+    }
+  }
+}

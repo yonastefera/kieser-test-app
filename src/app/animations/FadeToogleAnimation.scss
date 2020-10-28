@@ -1,0 +1,17 @@
+.fade-toggle-enter {
+  opacity: 0.01;
+}
+
+.fade-toggle-enter.fade-toggle-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-toggle-leave {
+  opacity: 1;
+}
+
+.fade-toggle-leave.fade-toggle-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

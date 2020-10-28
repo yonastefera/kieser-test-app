@@ -1,0 +1,28 @@
+@import "../../../../styles/mixins";
+
+.slide {
+  position: relative;
+  &__image {
+    width: 100%;
+    height: 20rem;
+  }
+  &__content {
+    @include flexColumn(center, flex-start);
+    color: white;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-left: 3rem;
+    &__text{
+      margin-bottom: 1rem;
+    }
+    @include mobile {
+      box-sizing: border-box;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+  }
+}

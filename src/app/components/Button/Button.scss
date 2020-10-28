@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.custom-button {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  &--blank {
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: 2px solid white;
+  }
+  &--green {
+    background-color: $color-green;
+  }
+  &--orange {
+    background-color: $color-orange;
+  }
+  &--size-sm {
+    padding: .5rem 1.5rem;
+  }
+  &--size-md {
+    height: 2.5rem;
+    padding: 0 3rem;
+  }
+}

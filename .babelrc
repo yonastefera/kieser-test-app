@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "loose": true,
+        "modules": false,
+        "useBuiltIns": "usage",
+        "targets": {
+          "browsers": [
+            "last 3 versions",
+            "safari >= 7"
+          ],
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/react"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/proposal-class-properties",
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ]
+      }
+    ]
+  ]
+}
